@@ -1,0 +1,22 @@
+{
+  "name": "trabalho-simulador-estacionamento",
+  "version": "1.0.0",
+  "description": "Simulador de vagas, sensores e gateways para os setores A, B e C.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test",
+    "sensor": "node scripts/sensor-cli.mjs",
+    "publisher": "node src/publisher.js",
+    "subscriber": "node src/subscriber.js",
+    "demo": "node src/demo.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "mqtt": "^5.10.4"
+  }
+}
